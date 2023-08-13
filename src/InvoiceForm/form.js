@@ -43,39 +43,41 @@ function InvoiceForm({ addInvoice }) {
 
   return (
     <div className="whole">
-    <div className="invoice-form">
-      <h1>New Invoice Form</h1>
-      <form method="post" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Name"
-          required
-          value={clientName}
-          onChange={(e) => setClientName(e.target.value)}
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          required
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+      <div className="invoice-form">
+        <h1>New Invoice Form</h1>
+        <form method="post" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Name"
+            required
+            value={clientName}
+            onChange={(e) => setClientName(e.target.value)}
           />
-        <input
-          type="address"
-          placeholder="Address"
-          required
-          value={address}
-          onChange={(e) => setAddress(e.target.value)}
+          <input
+            type="email"
+            placeholder="Email"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
-        <button className="btn" type="submit">Submit</button>
+          <input
+            type="address"
+            placeholder="Address"
+            required
+            value={address}
+            onChange={(e) => setAddress(e.target.value)}
+          />
+          <button className="btn" type="submit">
+            Submit
+          </button>
 
-        {/* {invoiceItems.map((item, index) => (
+          {/* {invoiceItems.map((item, index) => (
           <div key={index} className="item">
           <p>Soap Products <span>$2000</span></p>
           </div>
         ))} */}
-      </form>
-        </div>
+        </form>
+      </div>
     </div>
   );
 }

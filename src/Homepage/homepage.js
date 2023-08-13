@@ -15,7 +15,6 @@ const invoices = [
 
 function HomePage() {
   const handleCreateInvoice = () => {
-    // Simulate creating a new invoice
     toast.success("Invoice created successfully!", {
       position: "top-right",
       autoClose: 3000,
@@ -30,30 +29,32 @@ function HomePage() {
 
   return (
     <div className="header">
-    <div className="home-page">
-      <h1>Invoices</h1>
-      <Link to="/form" exact="true">Create New Invoice</Link>
-      <table>
-        <thead>
-          <tr>
-            <th>Invoice Number</th>
-            <th>Client Name</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          {invoices.map((invoice) => (
-            <tr key={invoice.id}>
-              <td>
-                <Link to={`/invoice/${invoice.id}`}>{invoice.id}</Link>
-              </td>
-              <td>{invoice.clientName}</td>
-              <td>{invoice.status}</td>
+      <div className="home-page">
+        <h1>Invoices</h1>
+        <Link to="/form" exact="true">
+          Create New Invoice
+        </Link>
+        <table>
+          <thead>
+            <tr>
+              <th>Invoice Number</th>
+              <th>Client Name</th>
+              <th>Status</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+          </thead>
+          <tbody>
+            {invoices.map((invoice) => (
+              <tr key={invoice.id}>
+                <td>
+                  <Link to={`/invoice/${invoice.id}`}>{invoice.id}</Link>
+                </td>
+                <td>{invoice.clientName}</td>
+                <td>{invoice.status}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
