@@ -1,0 +1,42 @@
+.invoice-details {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #F7EFD9;
+  border-radius: 20px;
+  margin-top: 5%;
+  width: 30%;
+  padding: 20px;
+}
+.delete-button {
+  background-color: #F3DE6F;
+  margin-left: 10%;
+  border: none;
+  border-radius: 20px;
+  height: 8vh;
+  color: white;
+  cursor: pointer;
+  font-size: medium;
+  text-align: center;
+  width: 30%;
+}
+.toggle-button{
+  background-color: #F3DE6F;
+  border: none;
+  border-radius: 20px;
+  height: 8vh;
+  text-align: center;
+  color: white;
+  font-size: medium;
+  cursor: pointer;
+  width: 30%;
+
+}
+
+.items-list {
+  list-style: none;
+  padding: 0;
+}
+
+.items-list li {
+  margin-bottom: 5px;
+}

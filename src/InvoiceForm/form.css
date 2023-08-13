@@ -1,0 +1,67 @@
+.whole{
+  background-color:#F7EFD9;
+  width: 45%;
+  margin-left: 30%;
+  margin-top: 3%;
+  border-radius: 20px;
+}
+.invoice-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.item {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.btn {
+    background-color: #F3DE6F;
+    color: white;
+    padding: 16px 32px;
+    margin-left: 35%;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
